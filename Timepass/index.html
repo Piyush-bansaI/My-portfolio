@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project-0</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="Images/Premium_Vector___Initial_letter_t_logo_with_thunder-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="navs">
+            <li>
+                <h1 id="logo">Timepass</h1>
+            </li>
+            <li><button class="themes">
+                    <svg class="light" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                        width="24px" fill="#121212">
+                        <path
+                            d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+                    </svg>
+                    <svg class="dark" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                        width="24px" fill="#e3e3e3">
+                        <path
+                            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+                    </svg>
+                </button></li>
+            <li id="home"><a href="" class="style" >Home</a></li>
+            <li id="about"><a href="" class="style" >About</a></li>
+            <li>
+                <div id="more-wrapper">
+                    <p id="more"> More<svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960"
+                            width="20px" fill="#e3e3e3">
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                        </svg></p>
+                    <div id="more-links">
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                        <a href="">Timepass</a>
+                    </div>
+                </div>
+            </li>
+            <li><button class="openbtn" id="login">Login</button></li>
+            <li id="open-menu"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960"
+                    width="30px" fill="#f0f0f0">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg></li>
+        </ul>
+    </nav>
+    <!-- nav-mobile -->
+    <nav id="navbar-mobile">
+        <button id="close-menu">X</button>
+        <ul id="nav-mob">
+            <li><button class="themes" id="theme-mobile">
+                    <svg class="light" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                        width="24px" fill="#121212">
+                        <path
+                            d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z" />
+                    </svg>
+                    <svg class="dark" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                        width="24px" fill="#f0f0f0">
+                        <path
+                            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z" />
+                    </svg>
+                </button></li>
+            <hr class="line">
+            <li><a href="" class="style-mobile">Home</a></li>
+            <hr class="line">
+            <li><a href="" class="style-mobile">About</a></li>
+            <hr class="line">
+            <li><button class="openbtn" id="form-mobile">Login</button></li>
+        </ul>
+    </nav>
+    <!-- login page -->
+     <div class="login-page">
+     <div class="login-back"></div>
+     <svg id="visual" viewBox="0 0 500 600" width="500" height="600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g fill="#80e5e5"><circle r="95" cx="464" cy="350"></circle><circle r="42" cx="201" cy="510"></circle><circle r="46" cx="409" cy="123"></circle><circle r="82" cx="93" cy="6"></circle></g></svg>
+     <button id="closebtn">X</button>
+        <h1 class="login-title">LØGIN</h1>
+        <p id="message"></p>
+        <form action="" id="form">
+            <p id="name-input" class="inputs">
+            <input type="text" id="name" class="user-info">
+            <label for="name" class="Username">Username</label>
+            </p>
+            <p id="mail-input" class="inputs">
+            <input type="mail" id="mail" class="user-info">
+            <label for="mail" class="E-mail">Email</label>
+            </p>
+            <p id="password-input" class="inputs">
+            <input type="password" id="password" class="user-info">
+            <button class="shows-pass" id="show-pass" type="button"><svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/></svg></button>
+            <button class="shows-pass" id="hide-pass" type="button"><svg  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m644-428-58-58q9-47-27-88t-93-32l-58-58q17-8 34.5-12t37.5-4q75 0 127.5 52.5T660-500q0 20-4 37.5T644-428Zm128 126-58-56q38-29 67.5-63.5T832-500q-50-101-143.5-160.5T480-720q-29 0-57 4t-55 12l-62-62q41-17 84-25.5t90-8.5q151 0 269 83.5T920-500q-23 59-60.5 109.5T772-302Zm20 246L624-222q-35 11-70.5 16.5T480-200q-151 0-269-83.5T40-500q21-53 53-98.5t73-81.5L56-792l56-56 736 736-56 56ZM222-624q-29 26-53 57t-41 67q50 101 143.5 160.5T480-280q20 0 39-2.5t39-5.5l-36-38q-11 3-21 4.5t-21 1.5q-75 0-127.5-52.5T300-500q0-11 1.5-21t4.5-21l-84-82Zm319 93Zm-151 75Z"/></svg></button>
+            <label for="password" class="pass">Password</label>
+            </p>
+            <button type="submit" id="submit"></button>
+        </form>
+    </div>
+    <!-- slidebar -->
+    <main>
+        <div class="slidebar">
+            <div id="slide-position">
+                <div class="slide">
+                    <img id="img-1" class="Images" src="Images/istockphoto-482582072-1024x1024.jpg" alt="">
+                    <div class="slide-backs" id="back-1"></div>
+                    <div class="content">
+                        <h1>Timepass</h1>
+                        <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
+                            incidunt dolores saepe omnis, velit iure?</p>
+                        <a href="" class="btn">Explore More <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img id="img-2" class="Images" src="Images/istockphoto-1162624125-1024x1024.jpg" alt="">
+                    <div class="slide-backs" id="back-2"></div>
+                    <div class="content">
+                        <h1>Timepass</h1>
+                        <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
+                            incidunt dolores saepe omnis, velit iure? Lorem, ipsum.</p>
+                        <a href="" class="btn">Explore More <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img id="img-3" class="Images" src="Images/istockphoto-1159994566-1024x1024.jpg" alt="">
+                    <div class="slide-backs" id="back-3"></div>
+                    <div class="content">
+                        <h1>Timepass</h1>
+                        <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
+                            incidunt dolores saepe omnis, velit iure? Lorem, ipsum dolor.</p>
+                        <a href="" class="btn">Explore More <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                            </svg></a>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img id="img-4" class="Images" src="Images/istockphoto-1465884597-1024x1024.jpg" alt="">
+                    <div class="slide-backs" id="back-4"></div>
+                    <div class="content">
+                        <h1>Timepass</h1>
+                        <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi
+                            incidunt dolores saepe omnis, velit iure? Lorem ipsum dolor sit.</p>
+                        <a href="" class="btn">Explore More <svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                                <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <button id="prevbtn"><</button>
+                    <button id="nextbtn">></button>
+        </div>
+        <!-- content -->
+        <div id="content-1">
+            <h1 id="greeting">Welcome!</h1>
+            <p class="sub-heading">this website will make you busy!</p>
+            <p class="sub-heading" id="sub-head-2">We will gonna tell you the ways to pass your time</p>
+            <div class="content-wrapper">
+                <div class="contents">
+                    <h1 class="content-heading">Timepass</h1>
+                    <p class="arc-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sapiente iste
+                        atque, vero eum,
+                        alias perspiciatis possimus dolorem recusandae libero aut. Autem nam minus aut.
+                    </p>
+                </div>
+                <div class="Images">
+                    <img id="eg-1" src="Images/Man_lying_watching_phone-removebg-preview.png" alt="">
+                </div>
+            </div>
+            <div class="content-wrapper reverse">
+                <div class="contents ">
+                    <h1 class="content-heading ">Timepass</h1>
+                    <p class="arc-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sapiente iste
+                        atque, vero eum,
+                        alias perspiciatis possimus dolorem recusandae libero aut. Autem nam minus aut.
+                    </p>
+                </div>
+                <div class="Images">
+                    <img id="eg-2" src="Images/relax_7738200.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="section-container">
+            <div class="hero-content">
+                <h2 id="hero-heading">I create more projects like this</h2>
+                <p id="hero-inst">If you wanna see more projects like this, scroll to the last page</p>
+            </div>
+            <img id="hero" src="Images/Hero Section.png" alt="Hero-section">
+            <img class="hero-mobile" src="Images/Hero Section-mobile.png" alt="Hero-section">
+            <img src="Images/Hero Section-mobile-M.png" alt="Hero-section" id="hero-mobile-M">
+        </div>
+        <div id="content-continue">
+            <div class="content-wrapper">
+                <div class="contents">
+                    <h1 class="content-heading">You can Play Games!</h1>
+                    <p class="arc-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sapiente iste
+                        atque, vero eum,
+                        alias perspiciatis possimus dolorem recusandae libero aut. Autem nam minus aut.
+                    </p>
+                </div>
+                <div class="Images">
+                    <img id="eg-3" src="Images/video-game.png" alt="">
+                </div>
+            </div>
+            <div class="content-wrapper reverse">
+                <div class="contents">
+                    <h1 class="content-heading">You can do Exercise!</h1>
+                    <p class="arc-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sapiente iste
+                        atque, vero eum,
+                        alias perspiciatis possimus dolorem recusandae libero aut. Autem nam minus aut.
+                    </p>
+                </div>
+                <div class="Images">
+                    <img id="eg-4" src="Images/fitness.png" alt="">
+                </div>
+            </div>
+            <div class="content-wrapper">
+                <div class="contents">
+                    <h1 class="content-heading">You can do gardening</h1>
+                    <p class="arc-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sapiente iste
+                        atque, vero eum,
+                        alias perspiciatis possimus dolorem recusandae libero aut. Autem nam minus aut.
+                    </p>
+                </div>
+                <div class="Images">
+                    <img id="eg-5" src="Images/gardener.png" alt="">
+                </div>
+            </div>
+            <div class="content-wrapper reverse">
+                <div class="contents">
+                    <h1 class="content-heading">You can read some books!</h1>
+                    <p class="arc-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore sapiente iste
+                        atque, vero eum,
+                        alias perspiciatis possimus dolorem recusandae libero aut. Autem nam minus aut.
+                    </p>
+                </div>
+                <div class="Images">
+                    <img id="eg-6" src="Images/reading-book.png" alt="">
+                </div>
+            </div>
+        </div>
+            <p class="my-projects">More projects</p>
+        <!-- more projects slides -->
+        <div class="project-swiper swiper">
+  <div class="swiper-wrapper">
+    <div class="swiper-slide slide-page" id="current-slide">
+    <a href="index.html">
+        <div class="slider-content-wrapper">
+            <p id="page-teller">You are currently here</p>
+        <div class="vid-container">
+        <video class="videos" id="big-video" src="Images/ezgif-4637ea8feace9c.mp4" muted loop></video>
+        </div>
+        <div class="project-content">
+            <p class="project-tag" id="tag-1">Started</p>
+            <div class="project-heading">Project-0</div>
+            <div class="project-discription">This project is about to make you busy if you have much more time.</div>
+            <button class="more-arrow"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></button>
+        </div>
+        </div></a>
+    </div>
+    <div class="swiper-slide slide-page">
+        <a href="">
+        <div class="slider-content-wrapper">
+        <div class="vid-container">
+        <video class="videos" src="Images/ezgif-47587e0e7b2906.mp4" muted loop></video>
+        </div>
+        <div class="project-content">
+            <p class="project-tag" id="tag-2">Designer</p>
+            <div class="project-heading">Project-1</div>
+            <div class="project-discription">This project is about stylish e-commerce website. please check it out also</div>
+            <button class="more-arrow"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></button>
+        </div>
+        </div></a>
+    </div>
+    <div class="swiper-slide slide-page">
+        <a href="#">
+        <div class="slider-content-wrapper">
+        <div class="vid-container">
+        <video class="videos" src="Images/Under construction.mp4" muted loop></video>
+        </div>
+        <div class="project-content">
+            <p class="project-tag" id="tag-3">Under Construction</p>
+            <div class="project-heading">Project-2</div>
+            <div class="project-discription">The webpage will be created soon.
+                please wait till then. Thank you!
+            </div>
+            <button class="more-arrow"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></button>
+        </div>
+    </div></a>
+    </div>
+    <div class="swiper-slide slide-page">
+        <a href="#">
+        <div class="slider-content-wrapper">
+        <div class="vid-container">
+        <video class="videos" src="Images/Under construction.mp4" muted loop></video>
+        </div>
+        <div class="project-content">
+            <p class="project-tag" id="tag-4">Under Construction</p>
+            <div class="project-heading">Project-3</div>
+            <div class="project-discription">The webpage will be created soon.
+                please wait till then. Thank you!
+            </div>
+            <button class="more-arrow"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z"/></svg></button>
+        </div></div></a>
+  </div>
+  </div>
+  <div class="swiper-pagination">
+    <span class="swiper-pagination-bullet"></span>
+    <span class="swiper-pagination-bullet"></span>
+    <span class="swiper-pagination-bullet swiper-pagination-bullet-active"></span>
+  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
+    </main>
+    <!-- footer -->
+    <footer>
+        <div id="footer-wrapper">
+            <div id="credits">
+                <h2 id="footer-logo">
+                    Timepass
+                </h2>
+                <div id="social-links">
+                    <!-- youtube -->
+                     <div id="yt-nav-container">
+                        <div id="yt-nav">Youtube Clone</div>
+                     </div>
+                    <a id="media-1" href="">
+                        <?xml version="1.0" encoding="iso-8859-1"?>
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg class="icons" height="20px" width="20px" version="1.1" id="layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 461.001 461.001" xml:space="preserve">
+                            <g>
+                                <path style="fill:#f0f0f0;"
+                                    d="M365.257,67.393H95.744C42.866,67.393,0,110.259,0,163.137v134.728
+                            c0,52.878,42.866,95.744,95.744,95.744h269.513c52.878,0,95.744-42.866,95.744-95.744V163.137
+                            C461.001,110.259,418.135,67.393,365.257,67.393z M300.506,237.056l-126.06,60.123c-3.359,1.602-7.239-0.847-7.239-4.568V168.607
+                            c0-3.774,3.982-6.22,7.348-4.514l126.06,63.881C304.363,229.873,304.298,235.248,300.506,237.056z" />
+                            </g>
+                        </svg>
+                    </a>
+                    <!-- instagram -->
+                     <div id="insta-nav-container">
+                        <div id="insta-nav">Instagram Clone</div>
+                     </div>
+                    <a id="media-2" href="">
+                        <?xml version="1.0" encoding="iso-8859-1"?>
+                        <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <svg class="icons" height="20px" width="20px" version="1.1" id="layer_1"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                            viewBox="0 0 551.034 551.034" xml:space="preserve">
+                            <g id="XMLID_13_">
+                                <path id="XMLID_17_" style="fill:#f0f0f0;" d="M386.878,0H164.156C73.64,0,0,73.64,0,164.156v222.722
+                            c0,90.516,73.64,164.156,164.156,164.156h222.722c90.516,0,164.156-73.64,164.156-164.156V164.156
+                            C551.033,73.64,477.393,0,386.878,0z M495.6,386.878c0,60.045-48.677,108.722-108.722,108.722H164.156
+                            c-60.045,0-108.722-48.677-108.722-108.722V164.156c0-60.046,48.677-108.722,108.722-108.722h222.722
+                            c60.045,0,108.722,48.676,108.722,108.722L495.6,386.878L495.6,386.878z" />
+
+                                <path id="XMLID_81_" style="fill:#f0f0f0;" d="M275.517,133C196.933,133,133,196.933,133,275.516
+                            s63.933,142.517,142.517,142.517S418.034,354.1,418.034,275.516S354.101,133,275.517,133z M275.517,362.6
+                            c-48.095,0-87.083-38.988-87.083-87.083s38.989-87.083,87.083-87.083c48.095,0,87.083,38.988,87.083,87.083
+                            C362.6,323.611,323.611,362.6,275.517,362.6z" />
+
+                                <circle id="XMLID_83_" style="fill:#f0f0f0;" cx="418.306" cy="134.072" r="34.149" />
+                            </g>
+                        </svg>
+                    </a>
+                    <!-- discord -->
+                     <div id="disco-nav-container">
+                        <div id="disco-nav">Discord Clone</div>
+                     </div>
+                    <a id="media-3" href="">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                    <svg width="20px" height="20px" viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
+                        <g>
+                            <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="#f0f0f0" fill-rule="nonzero">
+                            
+                    </path>
+                        </g>
+                    </svg>
+                    </a>
+                    <!-- reddit -->
+                     <div id="reddit-nav-container">
+                        <div id="reddit-nav">Reddit Clone</div>
+                     </div>
+                    <a id="media-4" href="">
+                        <svg viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg" width="20px" height="20px">
+                            <path
+                                d="M666.8 400c.08 5.48-.6 10.95-2.04 16.24s-3.62 10.36-6.48 15.04c-2.85 4.68-6.35 8.94-10.39 12.65s-8.58 6.83-13.49 9.27c.11 1.46.2 2.93.25 4.4a107.268 107.268 0 0 1 0 8.8c-.05 1.47-.14 2.94-.25 4.4 0 89.6-104.4 162.4-233.2 162.4S168 560.4 168 470.8c-.11-1.46-.2-2.93-.25-4.4a107.268 107.268 0 0 1 0-8.8c.05-1.47.14-2.94.25-4.4a58.438 58.438 0 0 1-31.85-37.28 58.41 58.41 0 0 1 7.8-48.42 58.354 58.354 0 0 1 41.93-25.4 58.4 58.4 0 0 1 46.52 15.5 286.795 286.795 0 0 1 35.89-20.71c12.45-6.02 25.32-11.14 38.51-15.3s26.67-7.35 40.32-9.56 27.45-3.42 41.28-3.63L418 169.6c.33-1.61.98-3.13 1.91-4.49.92-1.35 2.11-2.51 3.48-3.4 1.38-.89 2.92-1.5 4.54-1.8 1.61-.29 3.27-.26 4.87.09l98 19.6c9.89-16.99 30.65-24.27 48.98-17.19s28.81 26.43 24.71 45.65c-4.09 19.22-21.55 32.62-41.17 31.61-19.63-1.01-35.62-16.13-37.72-35.67L440 186l-26 124.8c13.66.29 27.29 1.57 40.77 3.82a284.358 284.358 0 0 1 77.8 24.86A284.412 284.412 0 0 1 568 360a58.345 58.345 0 0 1 29.4-15.21 58.361 58.361 0 0 1 32.95 3.21 58.384 58.384 0 0 1 25.91 20.61A58.384 58.384 0 0 1 666.8 400zm-396.96 55.31c2.02 4.85 4.96 9.26 8.68 12.97 3.71 3.72 8.12 6.66 12.97 8.68A40.049 40.049 0 0 0 306.8 480c16.18 0 30.76-9.75 36.96-24.69 6.19-14.95 2.76-32.15-8.68-43.59s-28.64-14.87-43.59-8.68c-14.94 6.2-24.69 20.78-24.69 36.96 0 5.25 1.03 10.45 3.04 15.31zm229.1 96.02c2.05-2 3.22-4.73 3.26-7.59.04-2.87-1.07-5.63-3.07-7.68s-4.73-3.22-7.59-3.26c-2.87-.04-5.63 1.07-7.94 2.8a131.06 131.06 0 0 1-19.04 11.35 131.53 131.53 0 0 1-20.68 7.99c-7.1 2.07-14.37 3.54-21.72 4.39-7.36.85-14.77 1.07-22.16.67-7.38.33-14.78.03-22.11-.89a129.01 129.01 0 0 1-21.64-4.6c-7.08-2.14-13.95-4.88-20.56-8.18s-12.93-7.16-18.89-11.53c-2.07-1.7-4.7-2.57-7.38-2.44s-5.21 1.26-7.11 3.15c-1.89 1.9-3.02 4.43-3.15 7.11s.74 5.31 2.44 7.38c7.03 5.3 14.5 9.98 22.33 14s16 7.35 24.4 9.97 17.01 4.51 25.74 5.66c8.73 1.14 17.54 1.53 26.33 1.17 8.79.36 17.6-.03 26.33-1.17A153.961 153.961 0 0 0 476.87 564c7.83-4.02 15.3-8.7 22.33-14zm-7.34-68.13c5.42.06 10.8-.99 15.81-3.07 5.01-2.09 9.54-5.17 13.32-9.06s6.72-8.51 8.66-13.58A39.882 39.882 0 0 0 532 441.6c0-16.18-9.75-30.76-24.69-36.96-14.95-6.19-32.15-2.76-43.59 8.68s-14.87 28.64-8.68 43.59c6.2 14.94 20.78 24.69 36.96 24.69z"
+                                fill="#fff" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <p class="footer-heading">More Links</p>
+                <p class="footer-heading">Details</p>
+                <p class="footer-heading">Terms</p>
+                <p class="footer-heading">Policy</p>
+                <a href="">Lorem</a>
+                <a href="">ipsum</a>
+                <a href="">dolor</a>
+                <a href="">sit</a>
+                <a href="">amet</a>
+                <a href="">consectetur</a>
+                <a href="">adipisicing </a>
+                <a href="">elit.</a>
+                <a href="">Molestias,</a>
+                <a href="">facilis?</a>
+                <a href="">Lorem</a>
+                <a href="">ipsum.</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>
