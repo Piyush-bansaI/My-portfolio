@@ -1,9 +1,9 @@
 Hey guys!👋
-My name is piyush bansal and ths is my very first project which I have uploaded on github.
+My name is piyush bansal and this is my very first project which I have uploaded on github.
 I have gave my very best in this project and I have just created only for showing purpose.
-I made this website very responsive and also I get to know lot about the basics of HTML, CSS and javascipt
+I made this website very responsive and also I get to know lot about the basics of HTML, CSS and Javascipt
 
--Features 💥
+- Features 💥
 
 1. Theme toggling ☀️🌙 - so it consists of theme toggling which gets save in your local storage, the default theme is dark BTW btu can also change    the theme into whie if you want and the theme will unchange even after leaving this page 
 
