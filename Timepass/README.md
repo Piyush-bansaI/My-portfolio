@@ -1,4 +1,4 @@
-sHey guys!👋
+Hey guys!👋
 My name is piyush bansal and ths is my very first project which I have uploaded on github.
 I have gave my very best in this project and I have just created only for showing purpose.
 I made this website very responsive and also I get to know lot about the basics of HTML, CSS and javascipt
@@ -30,4 +30,4 @@ the login consists of 3 information :-
 
 if use my project as your own I request that please give me the credit for this.
 
-I will gonna create more projeccts like this. 🙂🙂
+I will gonna create more projects like this. 🙂🙂
