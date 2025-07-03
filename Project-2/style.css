@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --font--family:'poppins', sans-serif;
+    --background--color: #2a2a2a;
+    --primary--color:#121212;
+    --text--color:#f0f0f0;
+    --accent--color:#7ad57a;
+    --not--imp--clr:#f0f0f02e;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    background:transparent ;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--not--imp--clr);
+}
+::-webkit-scrollbar-thumb:active {
+    background-color: #9d9d9d2e;
+}
+body {
+    background-color: var(--background--color);
+    color: var(--text--color);
+    font-family: var(--font--family);
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    background-image: url(images/low-poly-grid-haikei.svg);
+    background-size: cover;
+    background-position: center;
+    /* word-wrap: break-word;
+    white-space:normal;
+    word-wrap: break-word; */
+}
+main {
+    width: 55%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background--color);
+    background-image: url(images/polygon-scatter-haikei.svg);
+    background-position: center;
+    box-shadow: 0 0 10px var(--accent--color);
+    position: relative;
+    z-index: 1;
+}
+#title {
+    font-family: inherit;
+    font-weight: 900;
+    color: var(--accent--color);
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+#message {
+    color: #f0f0f089;
+}
+#todo-form {
+    position: relative;
+    width: 500px;
+    height: 50px;
+    z-index: -1;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+.todo-input {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 1px solid var(--text--color);
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0 20px;
+    caret-color: var(--accent--color);
+    color: var(--text--color);
+    font-weight: 500;
+    transition: border 0.5s ease;
+}
+.todo-input:focus {
+    outline: none;
+    border-color:var(--accent--color) ;
+}
+#todo-add {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    bottom: 0;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--accent--color);
+}
+#add-icon.active {
+    animation: spin 3s ease forwards;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+#todo-ul {
+    margin-top: 60px;
+    width: 550px;
+    max-height:400px;
+    overflow-y: auto;
+}
+.todo {
+    list-style-type: none;
+    background-color: var(--background--color);
+    border-radius: 5px;
+    border: 1px solid var(--not--imp--clr);
+    display: flex;
+    align-items: center;
+}
+.custom-checkbox {
+    border: 1px solid;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+.todo-text {
+    flex-grow: 1;
+    padding: 10px 30px;
+    transition: text-decoration, color 0.5s ease;
+    max-width: 464px;
+    height: auto;
+}
+input[type = checkbox] {
+    display: none;
+}
+.todo-delete {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+}
+.todo-delete:hover svg {
+    fill: rgba(255, 0, 0, 0.795);
+}
+input[type = checkbox]:checked ~ .custom-checkbox {
+    background-color: var(--accent--color);
+}
+input[type = checkbox]:checked ~ .custom-checkbox svg {
+    fill: var(--text--color);
+}
+input[type = checkbox]:checked ~ .todo-text {
+    text-decoration: line-through;
+    color: var(--not--imp--clr);
+}
+@media (max-width:1024px) {
+    main {
+        width: 590px;
+    }
+}
+@media (max-width: 590px) {
+    #title {
+        font-size: 2.5rem;
+    }
+    #todo-ul {
+        width: 95%;
+    }
+    #todo-form {
+        width: 95%;
+    }
+    .todo-input {
+        padding: 10px;
+    }
+}
