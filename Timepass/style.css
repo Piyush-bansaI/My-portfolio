@@ -793,7 +793,8 @@ img {
     border-radius: 10px;
     overflow: hidden;
 }
-#big-video {
+#big-video,
+#big-video-2{
     width: 250px;
     filter: brightness(1.2);
 }

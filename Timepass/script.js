@@ -308,7 +308,7 @@ closemenu.addEventListener('click', () => {
 const moreSlide = document.querySelectorAll(".swiper-slide");
 
 moreSlide.forEach((slidebar) => {
-    const video = slidebar.querySelector(".videos")
+    const video = slidebar.querySelector(".videos");
 
     slidebar.addEventListener('mouseenter', () => {
         video.play();
