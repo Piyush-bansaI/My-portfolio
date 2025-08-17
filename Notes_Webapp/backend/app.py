@@ -10,7 +10,7 @@ load_dotenv()
 
 app = Flask(__name__)
 app.secret_key = os.getenv('secret_key')
-CORS(app, origins=["https://my-portfolio-seven-chi-22.vercel.app/"], supports_credentials=True)
+CORS(app, origins=["https://my-portfolio-seven-chi-22.vercel.app"], supports_credentials=True)
 
 client = MongoClient(os.getenv('Mongo-url'))
 
