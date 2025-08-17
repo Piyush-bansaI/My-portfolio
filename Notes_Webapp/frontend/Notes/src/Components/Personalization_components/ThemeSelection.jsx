@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Themes from '../../Data/Themes.json'
 import { IoIosHome } from "react-icons/io";
 import { Link } from 'react-router-dom';
-import { CardCarousel } from "@/components/ui/card-carousel"
+import { CardCarousel } from "../../Components/ui/card-carousel"
 
 const ThemeSelection = () => {
     const [isDark, setIsDark] = useState(() => {
