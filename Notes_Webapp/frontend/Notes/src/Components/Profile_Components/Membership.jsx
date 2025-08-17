@@ -25,7 +25,7 @@ const Membership = () => {
     const dataFetcher = async () =>{
       try {
         
-        const premium = await axios.get('http://127.0.0.1:5000/get_premium', {
+        const premium = await axios.get('https://notes-backend-oi8m.onrender.com/get_premium', {
           params : {username: userData.username}
         });
         setIsPremium(premium.data.result);

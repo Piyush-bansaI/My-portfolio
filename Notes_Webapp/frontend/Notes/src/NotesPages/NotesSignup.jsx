@@ -143,7 +143,7 @@ const NotesSignup = () => {
       )
     } else {
       try {
-        const dataSender = await axios.post('http://127.0.0.1:5000/signup', {
+        const dataSender = await axios.post('https://notes-backend-oi8m.onrender.com/signup', {
           username: username,
           email: email,
           password: password, 

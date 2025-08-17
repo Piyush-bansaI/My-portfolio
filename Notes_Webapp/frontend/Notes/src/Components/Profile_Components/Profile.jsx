@@ -65,7 +65,7 @@ const Profile = () => {
     if (login) {
       const dataFetcher = async () => {
         try {
-          const Data = await axios.get('http://127.0.0.1:5000/moment_of_truth', {
+          const Data = await axios.get('https://notes-backend-oi8m.onrender.com/moment_of_truth', {
             params: {username: data.username}
           })
           setIsPremium(Data.data.premium);
